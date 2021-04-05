@@ -1,0 +1,233 @@
+2021-04-03T14:16:54Z Starting output-watcher...
+2021-04-03T14:16:54Z IsDedicatedCompute == True, won't poll for Low Pri Preemption
+2021-04-03T14:16:54Z Executing 'Copy ACR Details file' on 10.0.0.5
+2021-04-03T14:16:54Z Copy ACR Details file succeeded on 10.0.0.5. Output: 
+>>>   
+>>>   
+Login Succeeded
+Using default tag: latest
+latest: Pulling from azureml/azureml_1b693e1e47690b1ce42d104ae3d948c5
+Digest: sha256:26419e7bd8f7a0b7bda79e03600c7b992f41a66a4ef47d63de08113814ec9244
+Status: Image is up to date for viennaglobal.azurecr.io/azureml/azureml_1b693e1e47690b1ce42d104ae3d948c5:latest
+viennaglobal.azurecr.io/azureml/azureml_1b693e1e47690b1ce42d104ae3d948c5:latest
+2021-04-03T14:16:55Z Check if container automl_bf7840d2-5a31-488d-88df-bca241986748_43 already exist exited with 0, 
+
+60e02f25149a089223b321439ac5ea4335b8763054c9b775c9c183221c05780a
+2021-04-03T14:16:55Z Parameters for containerSetup task: useDetonationChamer set to false and sshRequired set to false 
+2021-04-03T14:16:55Z containerSetup task cmd: [/mnt/batch/tasks/startup/wd/hosttools -task=containerSetup -traceContext=00-771a04316e01a0d3d3a61a2c08598474-609cef3030716cbf-01 -sshRequired=false] 
+2021/04/03 14:16:55 Starting App Insight Logger for task:  containerSetup
+2021/04/03 14:16:55 Version: 3.0.01551.0004 Branch: .SourceBranch Commit: f72b8ad
+2021/04/03 14:16:55 Entered ContainerSetupTask - Preparing infiniband
+2021/04/03 14:16:55 Starting infiniband setup
+2021/04/03 14:16:55 VMSize: standard_ds3_v2, Host: runtime-gen1-ubuntu18, Container: ubuntu-16.04
+2021/04/03 14:16:55 VMSize: standard_ds3_v2, Host: runtime-gen1-ubuntu18, Container: ubuntu-16.04
+2021-04-03T14:16:55Z VMSize: standard_ds3_v2, Host: runtime-gen1-ubuntu18, Container: ubuntu-16.04
+2021/04/03 14:16:55 /dev/infiniband/uverbs0 found (implying presence of InfiniBand)?: false
+2021/04/03 14:16:55 Not setting up Infiniband in Container
+2021/04/03 14:16:55 Not setting up Infiniband in Container
+2021-04-03T14:16:55Z Not setting up Infiniband in Container
+2021/04/03 14:16:55 sshd inside container not required for job, skipping setup.
+2021/04/03 14:16:56 All App Insights Logs was send successfully
+2021/04/03 14:16:56 App Insight Client has already been closed
+2021/04/03 14:16:56 Not exporting to RunHistory as the exporter is either stopped or there is no data.
+Stopped: false
+OriginalData: 1
+FilteredData: 0.
+2021-04-03T14:16:56Z Starting docker container succeeded.
+2021-04-03T14:17:00Z Job environment preparation succeeded on 10.0.0.5. Output: 
+>>>   2021/04/03 14:16:53 Starting App Insight Logger for task:  prepareJobEnvironment
+>>>   2021/04/03 14:16:53 Version: 3.0.01551.0004 Branch: .SourceBranch Commit: f72b8ad
+>>>   2021/04/03 14:16:53 runtime.GOOS linux
+>>>   2021/04/03 14:16:53 Reading dyanamic configs
+>>>   2021/04/03 14:16:53 Container sas url: https://baiscriptseastus2prod.blob.core.windows.net/aihosttools?sv=2018-03-28&sr=c&si=aihosttoolspolicy&sig=0zSJlZiBvTfbGrZHmFBZqzDes0PMmYkeROmANx9hhuo%3D
+>>>   2021/04/03 14:16:53 Failed to read from file /mnt/batch/tasks/startup/wd/az_resource/xdsenv.variable/azsecpack.variables, open /mnt/batch/tasks/startup/wd/az_resource/xdsenv.variable/azsecpack.variables: no such file or directory
+>>>   2021/04/03 14:16:53 [in autoUpgradeFromJobNodeSetup] Is Azsecpack installed false, isEnable false,
+>>>   2021/04/03 14:16:53 azsecpack isEnable:false,GetDisableVsatlsscan:true
+>>>   2021/04/03 14:16:53 [doTurnOffAzsecpack] output:Unit mdsd.service could not be found.
+>>>   ,err:exit status 1.
+>>>   2021/04/03 14:16:53 OS patching disabled by dynamic configs. Skipping.
+>>>   2021/04/03 14:16:53 Job: AZ_BATCHAI_JOB_NAME does not turn on the DetonationChamber
+>>>   2021/04/03 14:16:53 Start to getting gpu count by running nvidia-smi command
+>>>   2021/04/03 14:16:53 GPU count found on the node: 0
+>>>   2021/04/03 14:16:53 AMLComputeXDSEndpoint:  https://eastus2-prodk8ds.batchai.core.windows.net
+>>>   2021/04/03 14:16:53 AMLComputeXDSApiVersion:  2018-02-01
+>>>   2021/04/03 14:16:53 Creating directory /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/config
+>>>   2021/04/03 14:16:53 This is not a aml-workstation (compute instance), current offer type: amlcompute. Starting identity responder as part of prepareJobEnvironment.
+>>>   2021/04/03 14:16:53 Starting identity responder.
+>>>   2021/04/03 14:16:53 Starting identity responder.
+>>>   2021/04/03 14:16:53 Failed to open file /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/config/.batchai.IdentityResponder.envlist: open /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/config/.batchai.IdentityResponder.envlist: no such file or directory
+>>>   2021/04/03 14:16:53 Logfile used for identity responder: /mnt/batch/tasks/workitems/4684b8e9-d857-406c-8820-47d441f79713/job-1/automl_bf7840d2-5a31_ba0f78f7-7757-4545-8258-45d28567be90/IdentityResponderLog-tvmps_6add60cda867a083b46d2ce152c38ef9224f2cef10b435e04737fd804e75c853_d.txt
+>>>   2021/04/03 14:16:53 Logfile used for identity responder: /mnt/batch/tasks/workitems/4684b8e9-d857-406c-8820-47d441f79713/job-1/automl_bf7840d2-5a31_ba0f78f7-7757-4545-8258-45d28567be90/IdentityResponderLog-tvmps_6add60cda867a083b46d2ce152c38ef9224f2cef10b435e04737fd804e75c853_d.txt
+>>>   2021/04/03 14:16:53 Started Identity Responder for job.
+>>>   2021/04/03 14:16:53 Started Identity Responder for job.
+>>>   2021/04/03 14:16:53 Creating directory /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/wd
+>>>   2021/04/03 14:16:53 Creating directory /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/shared
+>>>   2021/04/03 14:16:53 Mounting job level file systems
+>>>   2021/04/03 14:16:53 Creating directory /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts
+>>>   2021/04/03 14:16:53 Attempting to read datastore credentials file: /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/config/.amlcompute.datastorecredentials
+>>>   2021/04/03 14:16:53 Datastore credentials file not found, skipping.
+>>>   2021/04/03 14:16:53 Attempting to read runtime sas tokens file: /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/config/.master.runtimesastokens
+>>>   2021/04/03 14:16:53 Runtime sas tokens file not found, skipping.
+>>>   2021/04/03 14:16:53 No NFS configured
+>>>   2021/04/03 14:16:53 No Azure File Shares configured
+>>>   2021/04/03 14:16:53 Mounting blob file systems
+>>>   2021/04/03 14:16:53 Blobfuse runtime version 1.3.6
+>>>   2021/04/03 14:16:53 Mounting azureml-blobstore-f9210439-c537-450f-ae06-a554f5796646 container from socialmediaeng4644031978 account at /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore
+>>>   2021/04/03 14:16:53 Using Compute Identity to authenticate Blobfuse: false.
+>>>   2021/04/03 14:16:53 Using Compute Identity to authenticate Blobfuse: false.
+>>>   2021/04/03 14:16:53 Blobfuse cache size set to 20368 MB.
+>>>   2021/04/03 14:16:53 Running following command: /bin/bash -c sudo blobfuse /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore --tmp-path=/mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/caches/workspaceblobstore --file-cache-timeout-in-seconds=1000000 --cache-size-mb=20368 -o nonempty -o allow_other --config-file=/mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/configs/workspaceblobstore.cfg --log-level=LOG_WARNING
+>>>   2021/04/03 14:16:53 Successfully mounted a/an Blobfuse File System at /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore
+>>>   2021/04/03 14:16:53 Waiting for blobfs to be mounted at /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore
+>>>   2021/04/03 14:16:53 Successfully mounted azureml-blobstore-f9210439-c537-450f-ae06-a554f5796646 container from socialmediaeng4644031978 account at /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore
+>>>   2021/04/03 14:16:53 No unmanaged file systems configured
+>>>   2021/04/03 14:16:53 Start to getting gpu count by running nvidia-smi command
+>>>   2021/04/03 14:16:53 From the policy service, the filtering patterns is: , data store is 
+>>>   2021/04/03 14:16:53 Creating directory /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/azureml_compute_logs
+>>>   2021/04/03 14:16:53 Creating directory /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/logs
+>>>   2021/04/03 14:16:54 Creating directory /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/outputs
+>>>   2021/04/03 14:16:54 Starting output-watcher...
+>>>   2021/04/03 14:16:54 Single file input dataset is enabled.
+>>>   2021/04/03 14:16:54 Start to pulling docker image: viennaglobal.azurecr.io/azureml/azureml_1b693e1e47690b1ce42d104ae3d948c5
+>>>   2021/04/03 14:16:54 Start pull docker image: viennaglobal.azurecr.io
+>>>   2021/04/03 14:16:54 Getting credentials for image viennaglobal.azurecr.io/azureml/azureml_1b693e1e47690b1ce42d104ae3d948c5 with url viennaglobal.azurecr.io
+>>>   2021/04/03 14:16:54 Container registry is ACR.
+>>>   2021/04/03 14:16:54 Skip getting ACR Credentials from Identity and will be getting it from EMS
+>>>   2021/04/03 14:16:54 Getting ACR Credentials from EMS for environment AutoML-AzureML-AutoML:Autosave_2021-04-02T15:23:19Z_4ab6e415
+>>>   2021/04/03 14:16:54 Requesting XDS for registry details.
+>>>   2021/04/03 14:16:54 Attempt 1 of http call to https://eastus2-prodk8ds.batchai.core.windows.net/hosttoolapi/subscriptions/b70cd360-9bf7-4811-add7-49b8f59baf39/resourceGroups/mshack/workspaces/social_media_engagement/clusters/model2/nodes/tvmps_6add60cda867a083b46d2ce152c38ef9224f2cef10b435e04737fd804e75c853_d?api-version=2018-02-01
+>>>   2021/04/03 14:16:54 Got container registry details from credentials service for registry address: viennaglobal.azurecr.io.
+>>>   2021/04/03 14:16:54 Writing ACR Details to file...
+>>>   2021/04/03 14:16:54 Copying ACR Details file to worker nodes...
+>>>   2021/04/03 14:16:54 Executing 'Copy ACR Details file' on 10.0.0.5
+>>>   2021/04/03 14:16:54 Begin executing 'Copy ACR Details file' task on Node
+>>>   2021/04/03 14:16:54 'Copy ACR Details file' task Node result: succeeded
+>>>   2021/04/03 14:16:54 Copy ACR Details file succeeded on 10.0.0.5. Output: 
+>>>   >>>   
+>>>   >>>   
+>>>   2021/04/03 14:16:54 Successfully retrieved ACR Credentials from EMS.
+>>>   2021/04/03 14:16:54 EMS returned viennaglobal.azurecr.io for environment AutoML-AzureML-AutoML
+>>>   2021/04/03 14:16:54 start login to the docker registry
+>>>   2021/04/03 14:16:55 Successfully logged into the docker registry.
+>>>   2021/04/03 14:16:55 Start run pull docker image command
+>>>   2021/04/03 14:16:55 Pull docker image succeeded.
+>>>   2021/04/03 14:16:55 Pull docker image time: 858.875662ms
+>>>   
+>>>   2021/04/03 14:16:55 Docker Version that this nodes use are: 19.03.14+azure
+>>>   
+>>>   2021/04/03 14:16:55 Start to getting gpu count by running nvidia-smi command
+>>>   2021/04/03 14:16:55 Setting the memory limit for docker container to be 13674 MB
+>>>   2021/04/03 14:16:55 The env variable file size is 36634 bytes
+>>>   2021/04/03 14:16:55 /dev/infiniband/uverbs0 found (implying presence of InfiniBand)?: false
+>>>   2021/04/03 14:16:55 Original Arguments: run,--ulimit,memlock=9223372036854775807,--ulimit,nofile=262144:262144,--cap-add,sys_ptrace,--name,automl_bf7840d2-5a31-488d-88df-bca241986748_43,-v,/mnt/batch/tasks/shared/LS_root/mounts:/mnt/batch/tasks/shared/LS_root/mounts,-v,/mnt/batch/tasks/shared/LS_root/configs:/mnt/batch/tasks/shared/LS_root/configs,-v,/mnt/batch/tasks/shared/LS_root/shared:/mnt/batch/tasks/shared/LS_root/shared,-v,/mnt/batch/tasks/workitems/4684b8e9-d857-406c-8820-47d441f79713/job-1/automl_bf7840d2-5a31_ba0f78f7-7757-4545-8258-45d28567be90/certs:/mnt/batch/tasks/workitems/4684b8e9-d857-406c-8820-47d441f79713/job-1/automl_bf7840d2-5a31_ba0f78f7-7757-4545-8258-45d28567be90/certs,-v,/mnt/batch/tasks/startup:/mnt/batch/tasks/startup,-m,13674m,-v,/mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/azureml_compute_logs:/mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/azureml_compute_logs,-v,/mnt/batch/tasks/workitems/4684b8e9-d857-406c-8820-47d441f79713/job-1/automl_bf7840d2-5a31_ba0f78f7-7757-4545-8258-45d28567be90/wd:/mnt/batch/tasks/workitems/4684b8e9-d857-406c-8820-47d441f79713/job-1/automl_bf7840d2-5a31_ba0f78f7-7757-4545-8258-45d28567be90/wd,-v,/mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43:/mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43,-v,/mnt/batch/tasks/shared/LS_root/shared/tracing/automl_bf7840d2-5a31-488d-88df-bca241986748_43/logs/azureml/tracing:/mnt/batch/tasks/shared/LS_root/shared/tracing/automl_bf7840d2-5a31-488d-88df-bca241986748_43/logs/azureml/tracing,-w,/mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/wd,--expose,23,--env-file,/mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/config/.batchai.envlist,--shm-size,2g
+>>>   2021/04/03 14:16:55 the binding /mnt/batch/tasks/shared/LS_root/shared/tracing/automl_bf7840d2-5a31-488d-88df-bca241986748_43/logs/azureml/tracing:/mnt/batch/tasks/shared/LS_root/shared/tracing/automl_bf7840d2-5a31-488d-88df-bca241986748_43/logs/azureml/tracing is discarded as we already have /mnt/batch/tasks/shared/LS_root/shared:/mnt/batch/tasks/shared/LS_root/shared 
+>>>   2021/04/03 14:16:55 the binding /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/azureml_compute_logs:/mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/azureml_compute_logs is discarded as we already have /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43:/mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43 
+>>>   2021/04/03 14:16:55 Updated Arguments: run,--ulimit,memlock=9223372036854775807,--ulimit,nofile=262144:262144,--cap-add,sys_ptrace,--name,automl_bf7840d2-5a31-488d-88df-bca241986748_43,-m,13674m,-w,/mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/wd,--expose,23,--env-file,/mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/config/.batchai.envlist,--shm-size,2g,-v,/mnt/batch/tasks/startup:/mnt/batch/tasks/startup,-v,/mnt/batch/tasks/shared/LS_root/mounts:/mnt/batch/tasks/shared/LS_root/mounts,-v,/mnt/batch/tasks/shared/LS_root/shared:/mnt/batch/tasks/shared/LS_root/shared,-v,/mnt/batch/tasks/shared/LS_root/configs:/mnt/batch/tasks/shared/LS_root/configs,-v,/mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43:/mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43,-v,/mnt/batch/tasks/workitems/4684b8e9-d857-406c-8820-47d441f79713/job-1/automl_bf7840d2-5a31_ba0f78f7-7757-4545-8258-45d28567be90/wd:/mnt/batch/tasks/workitems/4684b8e9-d857-406c-8820-47d441f79713/job-1/automl_bf7840d2-5a31_ba0f78f7-7757-4545-8258-45d28567be90/wd,-v,/mnt/batch/tasks/workitems/4684b8e9-d857-406c-8820-47d441f79713/job-1/automl_bf7840d2-5a31_ba0f78f7-7757-4545-8258-45d28567be90/certs:/mnt/batch/tasks/workitems/4684b8e9-d857-406c-8820-47d441f79713/job-1/automl_bf7840d2-5a31_ba0f78f7-7757-4545-8258-45d28567be90/certs
+>>>   2021/04/03 14:16:55 Running Docker command: docker run --ulimit memlock=9223372036854775807 --ulimit nofile=262144:262144 --cap-add sys_ptrace --name automl_bf7840d2-5a31-488d-88df-bca241986748_43 -m 13674m -w /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/wd --expose 23 --env-file /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/config/.batchai.envlist --shm-size 2g -v /mnt/batch/tasks/startup:/mnt/batch/tasks/startup -v /mnt/batch/tasks/shared/LS_root/mounts:/mnt/batch/tasks/shared/LS_root/mounts -v /mnt/batch/tasks/shared/LS_root/shared:/mnt/batch/tasks/shared/LS_root/shared -v /mnt/batch/tasks/shared/LS_root/configs:/mnt/batch/tasks/shared/LS_root/configs -v /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43:/mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43 -v /mnt/batch/tasks/workitems/4684b8e9-d857-406c-8820-47d441f79713/job-1/automl_bf7840d2-5a31_ba0f78f7-7757-4545-8258-45d28567be90/wd:/mnt/batch/tasks/workitems/4684b8e9-d857-406c-8820-47d441f79713/job-1/automl_bf7840d2-5a31_ba0f78f7-7757-4545-8258-45d28567be90/wd -v /mnt/batch/tasks/workitems/4684b8e9-d857-406c-8820-47d441f79713/job-1/automl_bf7840d2-5a31_ba0f78f7-7757-4545-8258-45d28567be90/certs:/mnt/batch/tasks/workitems/4684b8e9-d857-406c-8820-47d441f79713/job-1/automl_bf7840d2-5a31_ba0f78f7-7757-4545-8258-45d28567be90/certs -d -it --privileged --net=host viennaglobal.azurecr.io/azureml/azureml_1b693e1e47690b1ce42d104ae3d948c5
+>>>   2021/04/03 14:16:55 Check if container automl_bf7840d2-5a31-488d-88df-bca241986748_43 already exist exited with 0, 
+>>>   
+>>>   2021/04/03 14:16:55 Check if container automl_bf7840d2-5a31-488d-88df-bca241986748_43 already exist exited with 0, 
+>>>   
+>>>   2021/04/03 14:16:55 Parameters for containerSetup task: useDetonationChamer set to false and sshRequired set to false 
+>>>   2021/04/03 14:16:55 Parameters for containerSetup task: useDetonationChamer set to false and sshRequired set to false 
+>>>   2021/04/03 14:16:55 containerSetup task cmd: [/mnt/batch/tasks/startup/wd/hosttools -task=containerSetup -traceContext=00-771a04316e01a0d3d3a61a2c08598474-609cef3030716cbf-01 -sshRequired=false] 
+>>>   2021/04/03 14:16:55 containerSetup task cmd: [/mnt/batch/tasks/startup/wd/hosttools -task=containerSetup -traceContext=00-771a04316e01a0d3d3a61a2c08598474-609cef3030716cbf-01 -sshRequired=false] 
+>>>   2021/04/03 14:16:56 Container ssh is not required for job type.
+>>>   2021/04/03 14:16:56 Starting docker container succeeded.
+>>>   2021/04/03 14:16:56 Starting docker container succeeded.
+>>>   2021/04/03 14:16:56 Disk space after starting docker container: 21822MB
+>>>   2021/04/03 14:16:56 Begin execution of runSpecialJobTask
+>>>   2021/04/03 14:16:56 runSpecialJobTask: os.GetEnv constants.StdouterrDir: /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/azureml_compute_logs
+>>>   2021/04/03 14:16:56 runSpecialJobTask: Raw cmd for preparation is passed is: /azureml-envs/azureml_2b14f450572e78de640d54eaabed5e4d/bin/python /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43-setup/job_prep.py --snapshots '[{"Id":"1b5fcb5d-905d-41d4-938d-85029847590e","PathStack":["."],"SnapshotEntityId":null}]'
+>>>   2021/04/03 14:16:56 runSpecialJobTask: stdout path for preparation is passed is: /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/azureml_compute_logs/65_job_prep-tvmps_6add60cda867a083b46d2ce152c38ef9224f2cef10b435e04737fd804e75c853_d.txt
+>>>   2021/04/03 14:16:56 runSpecialJobTask: stderr path for preparation is passed is: /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/azureml_compute_logs/65_job_prep-tvmps_6add60cda867a083b46d2ce152c38ef9224f2cef10b435e04737fd804e75c853_d.txt
+>>>   2021/04/03 14:16:56 native cmd: export AZUREML_JOB_TASK_ERROR_PATH='/mnt/batch/tasks/workitems/4684b8e9-d857-406c-8820-47d441f79713/job-1/automl_bf7840d2-5a31_ba0f78f7-7757-4545-8258-45d28567be90/wd/runSpecialJobTask_error.json';cd /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43;/azureml-envs/azureml_2b14f450572e78de640d54eaabed5e4d/bin/python /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43-setup/job_prep.py --snapshots '[{"Id":"1b5fcb5d-905d-41d4-938d-85029847590e","PathStack":["."],"SnapshotEntityId":null}]'
+>>>   2021/04/03 14:16:56 runSpecialJobTask: commons.GetOsPlatform(): ubuntu
+>>>   2021/04/03 14:16:56 runSpecialJobTask: Running cmd: /usr/bin/docker exec -e AZUREML_SDK_TRACEPARENT=00-771a04316e01a0d3d3a61a2c08598474-73dd5daca83ece55-01 -t automl_bf7840d2-5a31-488d-88df-bca241986748_43 bash -c if [ -f ~/.bashrc ]; then PS1_back=$PS1; PS1='$'; . ~/.bashrc; PS1=$PS1_back; fi;PATH=$PATH:$AZ_BATCH_NODE_STARTUP_DIR/wd/;export AZUREML_JOB_TASK_ERROR_PATH='/mnt/batch/tasks/workitems/4684b8e9-d857-406c-8820-47d441f79713/job-1/automl_bf7840d2-5a31_ba0f78f7-7757-4545-8258-45d28567be90/wd/runSpecialJobTask_error.json';cd /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43;/azureml-envs/azureml_2b14f450572e78de640d54eaabed5e4d/bin/python /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43-setup/job_prep.py --snapshots '[{"Id":"1b5fcb5d-905d-41d4-938d-85029847590e","PathStack":["."],"SnapshotEntityId":null}]'
+>>>   2021/04/03 14:16:58 Attempt 1 of http call to https://eastus2.experiments.azureml.net/history/v1.0/private/subscriptions/b70cd360-9bf7-4811-add7-49b8f59baf39/resourceGroups/MSHack/providers/Microsoft.MachineLearningServices/workspaces/Social_media_engagement/runs/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/spans
+>>>   2021/04/03 14:16:59 runSpecialJobTask: job preparation exited with code 0 and err <nil>
+>>>   
+>>>   2021/04/03 14:16:59 runSpecialJobTask: preparation: [2021-04-03T14:16:56.974282] Entering job preparation.
+>>>   2021/04/03 14:16:59 runSpecialJobTask: preparation: [2021-04-03T14:16:58.155068] Starting job preparation.
+>>>   2021/04/03 14:16:59 runSpecialJobTask: preparation: [2021-04-03T14:16:58.155122] Extracting the control code.
+>>>   2021/04/03 14:16:59 runSpecialJobTask: preparation: [2021-04-03T14:16:58.182456] fetching and extracting the control code on master node.
+>>>   2021/04/03 14:16:59 runSpecialJobTask: preparation: [2021-04-03T14:16:58.182511] Starting extract_project.
+>>>   2021/04/03 14:16:59 runSpecialJobTask: preparation: [2021-04-03T14:16:58.182583] Starting to extract zip file.
+>>>   2021/04/03 14:16:59 runSpecialJobTask: preparation: [2021-04-03T14:16:58.658730] Finished extracting zip file.
+>>>   2021/04/03 14:16:59 runSpecialJobTask: preparation: [2021-04-03T14:16:58.795259] Using urllib.request Python 3.0 or later
+>>>   2021/04/03 14:16:59 runSpecialJobTask: preparation: [2021-04-03T14:16:58.795329] Start fetching snapshots.
+>>>   2021/04/03 14:16:59 runSpecialJobTask: preparation: [2021-04-03T14:16:58.795377] Start fetching snapshot.
+>>>   2021/04/03 14:16:59 runSpecialJobTask: preparation: [2021-04-03T14:16:58.795410] Retrieving project from snapshot: 1b5fcb5d-905d-41d4-938d-85029847590e
+>>>   2021/04/03 14:16:59 runSpecialJobTask: preparation: Starting the daemon thread to refresh tokens in background for process with pid = 52
+>>>   2021/04/03 14:16:59 runSpecialJobTask: preparation: [2021-04-03T14:16:59.085716] Finished fetching snapshot.
+>>>   2021/04/03 14:16:59 runSpecialJobTask: preparation: [2021-04-03T14:16:59.085747] Finished fetching snapshots.
+>>>   2021/04/03 14:16:59 runSpecialJobTask: preparation: [2021-04-03T14:16:59.085755] Finished extract_project.
+>>>   2021/04/03 14:16:59 runSpecialJobTask: preparation: [2021-04-03T14:16:59.096606] Finished fetching and extracting the control code.
+>>>   2021/04/03 14:16:59 runSpecialJobTask: preparation: [2021-04-03T14:16:59.101820] downloadDataStore - Download from datastores if requested.
+>>>   2021/04/03 14:16:59 runSpecialJobTask: preparation: [2021-04-03T14:16:59.102434] Start run_history_prep.
+>>>   2021/04/03 14:16:59 runSpecialJobTask: preparation: [2021-04-03T14:16:59.157663] Entering context manager injector.
+>>>   2021/04/03 14:16:59 runSpecialJobTask: preparation: [2021-04-03T14:16:59.209374] downloadDataStore completed
+>>>   2021/04/03 14:16:59 runSpecialJobTask: preparation: [2021-04-03T14:16:59.271222] Job preparation is complete.
+>>>   2021/04/03 14:16:59 Execution of runSpecialJobTask completed
+>>>   2021/04/03 14:16:59 Not exporting to RunHistory as the exporter is either stopped or there is no data.
+>>>   Stopped: false
+>>>   OriginalData: 3
+>>>   FilteredData: 0.
+>>>   2021/04/03 14:16:59 Process Exiting with Code:  0
+>>>   2021/04/03 14:17:00 All App Insights Logs was send successfully
+>>>   
+2021-04-03T14:17:00Z 127.0.0.1 slots=4 max-slots=4
+2021-04-03T14:17:00Z launching Custom job
+2021-04-03T14:18:46Z job exited with code 0
+2021-04-03T14:18:46Z Executing 'JobRelease task' on 10.0.0.5
+2021-04-03T14:18:50Z JobRelease task succeeded on 10.0.0.5. Output: 
+>>>   2021/04/03 14:18:46 Starting App Insight Logger for task:  jobRelease
+>>>   2021/04/03 14:18:46 Version: 3.0.01551.0004 Branch: .SourceBranch Commit: f72b8ad
+>>>   2021/04/03 14:18:46 Found interpret_community_log.txt files in logs directory
+>>>   
+>>>   2021/04/03 14:18:46 BatchMetricJson sent to telemetry endpoint: {"Level":"Information","Message":"interpret_community_log.txt","MessageContext":["TrackLoadedModules"],"AdditionalContext":{"attribution":"Execution"}}
+>>>   
+>>>   2021/04/03 14:18:46 Attempt 1 of http call to https://eastus2.experiments.azureml.net/execution/v1.0/subscriptions/b70cd360-9bf7-4811-add7-49b8f59baf39/resourceGroups/MSHack/providers/Microsoft.MachineLearningServices/workspaces/Social_media_engagement/experiments/exp1/runs/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/telemetry
+>>>   2021/04/03 14:18:46 BatchMetricJson sent to telemetry endpoint: {"RequiredFields":{"EventName":"LoadedModulesTelemetry"},"StandardFields":{"RunId":"AutoML_bf7840d2-5a31-488d-88df-bca241986748_43"},"ExtensionFields":{"logFiles":"interpret_community_log.txt"}}
+>>>   
+>>>   2021/04/03 14:18:46 Attempt 1 of http call to https://eastus2.experiments.azureml.net/execution/v2.0/subscriptions/b70cd360-9bf7-4811-add7-49b8f59baf39/resourceGroups/MSHack/providers/Microsoft.MachineLearningServices/workspaces/Social_media_engagement/experiments/exp1/runs/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/telemetryV2
+>>>   2021/04/03 14:18:46 runSpecialJobTask: os.GetEnv constants.StdouterrDir: /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/azureml_compute_logs
+>>>   2021/04/03 14:18:46 runSpecialJobTask: Raw cmd for postprocessing is passed is: export AZ_BATCHAI_RUN_STATUS='SUCCEEDED';export AZ_BATCHAI_LOG_UPLOAD_FAILED='false';/azureml-envs/azureml_2b14f450572e78de640d54eaabed5e4d/bin/python $AZ_BATCHAI_JOB_MOUNT_ROOT/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/azureml-setup/job_release.py
+>>>   2021/04/03 14:18:46 runSpecialJobTask: stdout path for postprocessing is passed is: /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/azureml_compute_logs/75_job_post-tvmps_6add60cda867a083b46d2ce152c38ef9224f2cef10b435e04737fd804e75c853_d.txt
+>>>   2021/04/03 14:18:46 runSpecialJobTask: stderr path for postprocessing is passed is: /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/azureml_compute_logs/75_job_post-tvmps_6add60cda867a083b46d2ce152c38ef9224f2cef10b435e04737fd804e75c853_d.txt
+>>>   2021/04/03 14:18:46 native cmd: export AZUREML_JOB_TASK_ERROR_PATH='/mnt/batch/tasks/workitems/4684b8e9-d857-406c-8820-47d441f79713/job-1/automl_bf7840d2-5a31_ba0f78f7-7757-4545-8258-45d28567be90/wd/runSpecialJobTask_error.json';cd /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43;export AZ_BATCHAI_RUN_STATUS='SUCCEEDED';export AZ_BATCHAI_LOG_UPLOAD_FAILED='false';/azureml-envs/azureml_2b14f450572e78de640d54eaabed5e4d/bin/python $AZ_BATCHAI_JOB_MOUNT_ROOT/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/azureml-setup/job_release.py
+>>>   2021/04/03 14:18:46 runSpecialJobTask: commons.GetOsPlatform(): ubuntu
+>>>   2021/04/03 14:18:46 runSpecialJobTask: Running cmd: /usr/bin/docker exec -e AZUREML_SDK_TRACEPARENT=00-771a04316e01a0d3d3a61a2c08598474-da36175196f12514-01 -t automl_bf7840d2-5a31-488d-88df-bca241986748_43 bash -c if [ -f ~/.bashrc ]; then PS1_back=$PS1; PS1='$'; . ~/.bashrc; PS1=$PS1_back; fi;PATH=$PATH:$AZ_BATCH_NODE_STARTUP_DIR/wd/;export AZUREML_JOB_TASK_ERROR_PATH='/mnt/batch/tasks/workitems/4684b8e9-d857-406c-8820-47d441f79713/job-1/automl_bf7840d2-5a31_ba0f78f7-7757-4545-8258-45d28567be90/wd/runSpecialJobTask_error.json';cd /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43;export AZ_BATCHAI_RUN_STATUS='SUCCEEDED';export AZ_BATCHAI_LOG_UPLOAD_FAILED='false';/azureml-envs/azureml_2b14f450572e78de640d54eaabed5e4d/bin/python $AZ_BATCHAI_JOB_MOUNT_ROOT/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/azureml-setup/job_release.py
+>>>   2021/04/03 14:18:50 runSpecialJobTask: job postprocessing exited with code 0 and err <nil>
+>>>   
+>>>   2021/04/03 14:18:50 runSpecialJobTask: postprocessing: [2021-04-03T14:18:47.125989] Entering job release
+>>>   2021/04/03 14:18:50 runSpecialJobTask: postprocessing: Failure while loading azureml_run_type_providers. Failed to load entrypoint automl = azureml.train.automl.run:AutoMLRun._from_run_dto with exception (cryptography 3.2 (/azureml-envs/azureml_2b14f450572e78de640d54eaabed5e4d/lib/python3.6/site-packages), Requirement.parse('cryptography<4.0.0,>=3.3.1; extra == "crypto"'), {'PyJWT'}).
+>>>   2021/04/03 14:18:50 runSpecialJobTask: postprocessing: [2021-04-03T14:18:48.148769] Starting job release
+>>>   2021/04/03 14:18:50 runSpecialJobTask: postprocessing: [2021-04-03T14:18:48.149516] Logging experiment finalizing status in history service.
+>>>   2021/04/03 14:18:50 runSpecialJobTask: postprocessing: [2021-04-03T14:18:48.149687] job release stage : upload_datastore starting...
+>>>   2021/04/03 14:18:50 runSpecialJobTask: postprocessing: Starting the daemon thread to refresh tokens in background for process with pid = 1049
+>>>   2021/04/03 14:18:50 runSpecialJobTask: postprocessing: [2021-04-03T14:18:48.150398] job release stage : start importing azureml.history._tracking in run_history_release.
+>>>   2021/04/03 14:18:50 runSpecialJobTask: postprocessing: [2021-04-03T14:18:48.151303] job release stage : copy_batchai_cached_logs starting...
+>>>   2021/04/03 14:18:50 runSpecialJobTask: postprocessing: [2021-04-03T14:18:48.159141] job release stage : copy_batchai_cached_logs completed...
+>>>   2021/04/03 14:18:50 runSpecialJobTask: postprocessing: [2021-04-03T14:18:48.159670] job release stage : execute_job_release starting...
+>>>   2021/04/03 14:18:50 runSpecialJobTask: postprocessing: [2021-04-03T14:18:48.159875] Entering context manager injector.
+>>>   2021/04/03 14:18:50 runSpecialJobTask: postprocessing: [2021-04-03T14:18:48.161237] job release stage : upload_datastore completed...
+>>>   2021/04/03 14:18:50 runSpecialJobTask: postprocessing: [2021-04-03T14:18:48.331266] job release stage : send_run_telemetry starting...
+>>>   2021/04/03 14:18:50 runSpecialJobTask: postprocessing: [2021-04-03T14:18:48.420000] job release stage : execute_job_release completed...
+>>>   2021/04/03 14:18:50 runSpecialJobTask: postprocessing: [2021-04-03T14:18:48.482930] get vm size and vm region successfully.
+>>>   2021/04/03 14:18:50 runSpecialJobTask: postprocessing: [2021-04-03T14:18:48.657671] get compute meta data successfully.
+>>>   2021/04/03 14:18:50 runSpecialJobTask: postprocessing: [2021-04-03T14:18:48.883465] post artifact meta request successfully.
+>>>   2021/04/03 14:18:50 runSpecialJobTask: postprocessing: [2021-04-03T14:18:48.913309] upload compute record artifact successfully.
+>>>   2021/04/03 14:18:50 runSpecialJobTask: postprocessing: [2021-04-03T14:18:49.475487] job release stage : send_run_telemetry completed...
+>>>   2021/04/03 14:18:50 runSpecialJobTask: postprocessing: [2021-04-03T14:18:49.476163] Job release is complete
+>>>   2021/04/03 14:18:50 All App Insights Logs was send successfully
+>>>   2021/04/03 14:18:50 App Insight Client has already been closed
+>>>   2021/04/03 14:18:50 Not exporting to RunHistory as the exporter is either stopped or there is no data.
+>>>   Stopped: false
+>>>   OriginalData: 3
+>>>   FilteredData: 0.
+>>>   
+2021-04-03T14:18:50Z Executing 'Job environment clean-up' on 10.0.0.5
+2021-04-03T14:18:51Z Removing container automl_bf7840d2-5a31-488d-88df-bca241986748_43 exited with 0, automl_bf7840d2-5a31-488d-88df-bca241986748_43
+
+

@@ -1,0 +1,92 @@
+2021/04/03 14:17:00 Attempt 1 of http call to http://10.0.0.5:16384/sendlogstoartifacts/info
+2021/04/03 14:17:00 Attempt 1 of http call to http://10.0.0.5:16384/sendlogstoartifacts/status
+[2021-04-03T14:17:01.016760] Entering context manager injector.
+[context_manager_injector.py] Command line Options: Namespace(inject=['ProjectPythonPath:context_managers.ProjectPythonPath', 'RunHistory:context_managers.RunHistory', 'TrackUserError:context_managers.TrackUserError'], invocation=['automl_driver.py'])
+Script type = None
+[2021-04-03T14:17:02.139832] Entering Run History Context Manager.
+[2021-04-03T14:17:04.204292] Current directory: /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43
+[2021-04-03T14:17:04.204683] Preparing to call script [automl_driver.py] with arguments:[]
+[2021-04-03T14:17:04.205182] After variable expansion, calling script [automl_driver.py] with arguments:[]
+
+Starting the automl_driver setup...
+2021/04/03 14:17:05 Not exporting to RunHistory as the exporter is either stopped or there is no data.
+Stopped: false
+OriginalData: 1
+FilteredData: 0.
+Set enable_streaming flag to False
+run_id in the real script:  AutoML_bf7840d2-5a31-488d-88df-bca241986748_43
+2021-04-03 14:17:06,056191 - INFO - Beginning driver wrapper.
+WARNING:root:Received unrecognized parameter test_size
+WARNING:root:Received unrecognized parameter enable_run_restructure
+2021-04-03 14:17:06.395 - INFO - Successfully got the cache data store, caching enabled.
+2021-04-03 14:17:06.397 - INFO - Took 0.25553297996520996 seconds to retrieve cache data store
+2021-04-03 14:17:06.576 - INFO - ActivityStarted: load
+2021-04-03 14:17:06.584 - INFO - Loading the saved_as object from cache.
+2021-04-03 14:17:06.584 - INFO - ActivityStarted: _load_saved_as_object_from_file
+2021-04-03 14:17:06.628 - INFO - Loaded saved_as file. The saved_as object is: {'_CACHE_STORE_KEY_ONNX_CONVERTER_INIT_METADATA_': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X': <_SavedAsProtocol.SCIPY: 3>, 'class_labels': <_SavedAsProtocol.PICKLE: 1>, 'X_raw': <_SavedAsProtocol.PICKLE: 1>, 'y_raw': <_SavedAsProtocol.NUMPY: 2>, 'train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'featurized train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_keys': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_object': <_SavedAsProtocol.PICKLE: 1>}
+2021-04-03 14:17:06.628 - INFO - ActivityCompleted: Activity=_load_saved_as_object_from_file, HowEnded=Success, Duration=43.83[ms]
+2021-04-03 14:17:06.634 - INFO - ActivityCompleted: Activity=load, HowEnded=Success, Duration=57.93[ms]
+2021-04-03 14:17:06.635 - INFO - ActivityStarted: load
+2021-04-03 14:17:06.645 - INFO - Loading the saved_as object from cache.
+2021-04-03 14:17:06.645 - INFO - ActivityStarted: _load_saved_as_object_from_file
+2021-04-03 14:17:06.668 - INFO - Loaded saved_as file. The saved_as object is: {'_CACHE_STORE_KEY_ONNX_CONVERTER_INIT_METADATA_': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_0': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_1': <_SavedAsProtocol.PICKLE: 1>, 'featurized_cv_split_2': <_SavedAsProtocol.PICKLE: 1>, 'y': <_SavedAsProtocol.NUMPY: 2>, 'X': <_SavedAsProtocol.SCIPY: 3>, 'class_labels': <_SavedAsProtocol.PICKLE: 1>, 'X_raw': <_SavedAsProtocol.PICKLE: 1>, 'y_raw': <_SavedAsProtocol.NUMPY: 2>, 'train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'featurized train CV splits': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_keys': <_SavedAsProtocol.PICKLE: 1>, 'dataset_cached_object': <_SavedAsProtocol.PICKLE: 1>}
+2021-04-03 14:17:06.669 - INFO - ActivityCompleted: Activity=_load_saved_as_object_from_file, HowEnded=Success, Duration=23.29[ms]
+2021-04-03 14:17:06.674 - INFO - ActivityCompleted: Activity=load, HowEnded=Success, Duration=39.12[ms]
+2021-04-03 14:17:06.675 - INFO - Getting ['dataset_cached_object'] from Azure file store cache
+2021-04-03 14:17:06.675 - INFO - ActivityStarted: get
+2021-04-03 14:17:06.675 - INFO - Getting data for key: dataset_cached_object
+2021-04-03 14:17:08.092 - INFO - Feature sweeping enabled: False
+2021-04-03 14:17:08.092 - INFO - Feature sweeping timeout: 86400
+2021-04-03 14:17:08.128 - INFO - ActivityCompleted: Activity=get, HowEnded=Success, Duration=1452.92[ms]
+2021-04-03 14:17:08.128 - INFO - Successfully loaded the AutoML Dataset from cache.
+2021-04-03 14:17:08.129 - INFO - Beginning the training iteration for run AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.
+2021-04-03 14:17:08.135 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43]CPU logical cores: 4, CPU cores: 4, virtual memory: 14705524736, swap memory: 0.
+2021-04-03 14:17:08.135 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43]Platform information: Linux.
+2021-04-03 14:17:08.168 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43][Starting fit_pipeline]memory usage 443777024
+2021-04-03 14:17:08.168 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43][Starting fit_pipeline]child memory usage 443777024
+2021-04-03 14:17:08.168 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43][Starting fit_pipeline]cpu time 3.670515
+2021-04-03 14:17:08.168 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43][Starting fit_pipeline]child cpu time 0.050695
+2021-04-03 14:17:08.169 - INFO - Component PrepareData finished after 0.0005546833333333333 minutes.
+2021-04-03 14:17:08.187 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43][Before executing pipeline]memory usage 443777024
+2021-04-03 14:17:08.190 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43][Before executing pipeline]child memory usage 443777024
+2021-04-03 14:17:08.191 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43][Before executing pipeline]cpu time 3.69177
+2021-04-03 14:17:08.191 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43][Before executing pipeline]child cpu time 0.050695
+2021-04-03 14:17:08.192 - INFO - ActivityStarted: RunPipeline
+2021-04-03 14:17:08.286 - INFO - Limits set to mem_in_mb=None, wall_time_in_s=10800, total_wall_time_in_s=31449600, cpu_time_in_s=None, num_processes=None, grace_period_in_s=None, 
+2021-04-03 14:17:08.287 - INFO - Calling function <bound method ClientRunner._run_ensembling_internal of <azureml.automl.runtime.shared.runner.ClientRunner object at 0x7f708a545ef0>> with argument types: [<class 'azureml.automl.runtime.shared.datasets.ClientDatasets'>, <class 'azureml.automl.runtime.shared.pipeline_spec.PipelineSpec'>, <class 'azureml.automl.runtime.shared.problem_info.ProblemInfo'>], {'sets_to_run': <class 'list'>, 'subsample_percent': <class 'float'>, 'random_state': <class 'NoneType'>, 'subsample_seed': <class 'NoneType'>, 'include_models': <class 'bool'>, 'compute_metrics_for_train_full': <class 'bool'>}
+2021-04-03 14:18:31.909 - INFO - ActivityCompleted: Activity=RunPipeline, HowEnded=Success, Duration=83716.8[ms]
+2021-04-03 14:18:31.910 - INFO - Pipeline execution finished with a score of 0.8472064781453446
+2021-04-03 14:18:31.937 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43][After executing pipeline]memory usage 477458432
+2021-04-03 14:18:31.937 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43][After executing pipeline]child memory usage 477458432
+2021-04-03 14:18:31.937 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43][After executing pipeline]cpu time 12.535502
+2021-04-03 14:18:31.938 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43][After executing pipeline]child cpu time 121.006967
+2021-04-03 14:18:31.938 - INFO - ActivityStarted: SaveModelArtifacts
+2021-04-03 14:18:31.939 - INFO - Saving the partially trained fitted models.
+2021-04-03 14:18:35.421 - INFO - Updating child run properties with model name AutoMLbf7840d2543 and size 27607162 bytes.
+2021-04-03 14:18:35.530 - INFO - ActivityCompleted: Activity=SaveModelArtifacts, HowEnded=Success, Duration=3592.32[ms]
+2021-04-03 14:18:35.531 - WARNING - Unknown metric models. Will not log.
+2021-04-03 14:18:35.942 - INFO - run_id:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43, pipeline_id:__AutoML_Stack_Ensemble__,The following metrics have been logged for the child run: {'normalized_root_mean_squared_log_error': 0.27053169092779544, 'spearman_correlation': 0.8472064781453446, 'median_absolute_error': 19078.96790124311, 'normalized_median_absolute_error': 0.00038413127267386744, 'root_mean_squared_log_error': 4.794056405936607, 'mean_absolute_error': 41041.53264417274, 'residuals': <class 'dict'>, 'mean_absolute_percentage_error': 135851.14548753484, 'predicted_true': <class 'dict'>, 'root_mean_squared_error': 344492.31496341375, 'r2_score': -0.0031582200946131955, 'normalized_mean_absolute_error': 0.0008263201787799508, 'explained_variance': 0.009859179615766952, 'normalized_root_mean_squared_error': 0.006935924000618544, 'predict_time': 0.49590333333333336, 'models': <class 'dict'>}.
+2021-04-03 14:18:36.718 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43][End fit_pipeline]memory usage 551133184
+2021-04-03 14:18:36.719 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43][End fit_pipeline]child memory usage 551133184
+2021-04-03 14:18:36.719 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43][End fit_pipeline]cpu time 14.990737
+2021-04-03 14:18:36.719 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43][End fit_pipeline]child cpu time 121.12154
+2021-04-03 14:18:36.858 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43][End fit_pipeline]memory usage 551133184
+2021-04-03 14:18:36.859 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43][End fit_pipeline]child memory usage 551133184
+2021-04-03 14:18:36.859 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43][End fit_pipeline]cpu time 15.040706
+2021-04-03 14:18:36.859 - INFO - [RunId:AutoML_bf7840d2-5a31-488d-88df-bca241986748_43][End fit_pipeline]child cpu time 121.12154
+2021-04-03 14:18:36.860 - INFO - Child run completed with spearman_correlation=0.8472064781453446 after 64 seconds.
+{'staticProperties': {}, 'score': 0.8472064781453446, 'score_table': 'NaN', 'run_properties': "base_learners=[('21',\n                                       Pipeline(memory=None,\n                                                steps=[('maxabsscaler',\n                                                        MaxAbsScaler(copy=True", 'pipeline_script': '{"pipeline_id":"__AutoML_Stack_Ensemble__","objects":[{"module":"azureml.train.automl.stack_ensemble","class_name":"StackEnsemble","spec_class":"sklearn","param_args":[],"param_kwargs":{"automl_settings":"{\'task_type\':\'regression\',\'primary_metric\':\'spearman_correlation\',\'ensemble_iterations\':15,\'is_timeseries\':False,\'name\':\'exp1\',\'compute_target\':\'model2\',\'subscription_id\':\'b70cd360-9bf7-4811-add7-49b8f59baf39\',\'region\':\'eastus2\'}","ensemble_run_id":"AutoML_bf7840d2-5a31-488d-88df-bca241986748_43","experiment_name":"exp1","workspace_name":"Social_media_engagement","subscription_id":"b70cd360-9bf7-4811-add7-49b8f59baf39","resource_group_name":"MSHack"}}]}', 'pipeline_id': '__AutoML_Stack_Ensemble__', 'training_type': 'MeanCrossValidation', 'num_classes': None, 'framework': 'sklearn', 'predicted_time': 0.0, 'fit_time': 64, 'goal': 'spearman_correlation_max', 'class_labels': None, 'primary_metric': 'spearman_correlation', 'errors': {}, 'onnx_model': None, 'onnx_model_resource': {}, 'onnx_featurizer_model': None, 'onnx_estimator_model': None, 'spearman_correlation': 0.8472064781453446, 'error_code': None, 'failure_reason': None, 'feature_skus': 'automatedml_sdk_guardrails', 'run_template': 'automl_child', 'run_preprocessor': None, 'run_algorithm': 'StackEnsemble'}
+
+
+[2021-04-03T14:18:36.958191] The experiment completed successfully. Finalizing run...
+Cleaning up all outstanding Run operations, waiting 900.0 seconds
+3 items cleaning up...
+Cleanup took 0.22562599182128906 seconds
+Starting the daemon thread to refresh tokens in background for process with pid = 107
+[2021-04-03T14:18:43.118719] Finished context manager injector.
+2021/04/03 14:18:45 Attempt 1 of http call to http://10.0.0.5:16384/sendlogstoartifacts/status
+2021/04/03 14:18:45 Not exporting to RunHistory as the exporter is either stopped or there is no data.
+Stopped: false
+OriginalData: 2
+FilteredData: 0.
+2021/04/03 14:18:45 Process Exiting with Code:  0

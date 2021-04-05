@@ -1,0 +1,460 @@
+2021-04-03 14:17:02,154|azureml|DEBUG|Inputs:: kwargs: {'OutputCollection': True, 'EnableMLflowTracking': True, 'only_in_process_features': True, 'skip_track_logs_dir': True}, track_folders: None, deny_list: None, directories_to_watch: []
+2021-04-03 14:17:02,155|azureml.history._tracking.PythonWorkingDirectory|DEBUG|Execution target type: batchai
+2021-04-03 14:17:02,170|azureml.history._tracking.PythonWorkingDirectory|DEBUG|Failed to import pyspark with error: No module named 'pyspark'
+2021-04-03 14:17:02,171|azureml.history._tracking.PythonWorkingDirectory.workingdir|DEBUG|Pinning working directory for filesystems: ['pyfs']
+2021-04-03 14:17:02,544|azureml.core|WARNING|Failure while loading azureml_run_type_providers. Failed to load entrypoint automl = azureml.train.automl.run:AutoMLRun._from_run_dto with exception (cryptography 3.2 (/azureml-envs/azureml_2b14f450572e78de640d54eaabed5e4d/lib/python3.6/site-packages), Requirement.parse('cryptography<4.0.0,>=3.3.1; extra == "crypto"'), {'PyJWT'}).
+2021-04-03 14:17:02,585|azureml.core.run|DEBUG|Adding new factory <function PipelineRun._from_dto at 0x7f70c71111e0> for run source azureml.PipelineRun
+2021-04-03 14:17:02,592|azureml.core.run|DEBUG|Adding new factory <function StepRun._from_reused_dto at 0x7f70c7111bf8> for run source azureml.ReusedStepRun
+2021-04-03 14:17:02,600|azureml.core.run|DEBUG|Adding new factory <function StepRun._from_dto at 0x7f70c7111b70> for run source azureml.StepRun
+2021-04-03 14:17:02,608|azureml.core.run|DEBUG|Adding new factory <function ScriptRun._from_run_dto at 0x7f70c7398048> for run source azureml.scriptrun
+2021-04-03 14:17:02,609|azureml.core.run|DEBUG|Identity in use is not set. Falling back to using AMLToken
+2021-04-03 14:17:02,609|azureml.core.run|DEBUG|Using AMLToken auth for remote run
+2021-04-03 14:17:02,611|azureml.core.authentication.TokenRefresherDaemon|DEBUG|Starting daemon and triggering first instance
+2021-04-03 14:17:02,618|azureml._restclient.clientbase|INFO|Created a worker pool for first use
+2021-04-03 14:17:02,618|azureml.core.authentication|DEBUG|Time to expire 1814380.3811 seconds
+2021-04-03 14:17:02,619|azureml._restclient.service_context|DEBUG|Created a static thread pool for ServiceContext class
+2021-04-03 14:17:02,619|azureml._restclient.clientbase|DEBUG|ClientBase: Calling get with url None
+2021-04-03 14:17:02,652|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:02,652|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:02,652|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:02,652|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:02,653|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:02,653|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:02,653|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:02,688|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[START]
+2021-04-03 14:17:02,688|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient|DEBUG|ClientBase: Calling get_by_exp_id with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experimentids/{experimentId}/runs/{runId}
+2021-04-03 14:17:02,753|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[STOP]
+2021-04-03 14:17:02,754|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43|DEBUG|Constructing run from dto. type: azureml.scriptrun, source: None, props: {'runTemplate': 'automl_child', 'pipeline_id': '__AutoML_Stack_Ensemble__', 'pipeline_spec': '{"pipeline_id":"__AutoML_Stack_Ensemble__","objects":[{"module":"azureml.train.automl.stack_ensemble","class_name":"StackEnsemble","spec_class":"sklearn","param_args":[],"param_kwargs":{"automl_settings":"{\'task_type\':\'regression\',\'primary_metric\':\'spearman_correlation\',\'ensemble_iterations\':15,\'is_timeseries\':False,\'name\':\'exp1\',\'compute_target\':\'model2\',\'subscription_id\':\'b70cd360-9bf7-4811-add7-49b8f59baf39\',\'region\':\'eastus2\'}","ensemble_run_id":"AutoML_bf7840d2-5a31-488d-88df-bca241986748_43","experiment_name":"exp1","workspace_name":"Social_media_engagement","subscription_id":"b70cd360-9bf7-4811-add7-49b8f59baf39","resource_group_name":"MSHack"}}]}', 'training_percent': '100', 'predicted_cost': None, 'iteration': '43', '_aml_system_scenario_identification': 'Remote.Child', '_azureml.ComputeTargetType': 'amlcompute', 'ContentSnapshotId': '1b5fcb5d-905d-41d4-938d-85029847590e', 'ProcessInfoFile': 'azureml-logs/process_info.json', 'ProcessStatusFile': 'azureml-logs/process_status.json'}
+2021-04-03 14:17:02,754|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunContextManager|DEBUG|Valid logs dir, setting up content loader
+2021-04-03 14:17:03,960|azureml|DEBUG|Installed with mlflow version 1.14.1.
+2021-04-03 14:17:03,961|azureml.mlflow|DEBUG|Setting up a Remote MLflow run
+2021-04-03 14:17:03,963|azureml.mlflow|DEBUG|Creating a tracking uri in eastus2.experiments.azureml.net for workspace /subscriptions/b70cd360-9bf7-4811-add7-49b8f59baf39/resourceGroups/MSHack/providers/Microsoft.MachineLearningServices/workspaces/Social_media_engagement
+2021-04-03 14:17:03,963|azureml.mlflow._internal.store|DEBUG|Initializing the AzureMLRestStore
+2021-04-03 14:17:03,964|azureml.mlflow._internal.model_registry|DEBUG|Initializing the AzureMLflowModelRegistry
+2021-04-03 14:17:03,964|azureml.mlflow|DEBUG|Setting MLflow tracking uri env var
+2021-04-03 14:17:03,964|azureml.mlflow|DEBUG|Setting MLflow run id env var with AutoML_bf7840d2-5a31-488d-88df-bca241986748_43
+2021-04-03 14:17:03,964|azureml.mlflow|DEBUG|Setting Mlflow experiment with exp1
+2021-04-03 14:17:03,965|azureml.mlflow|DEBUG|Setting the mlflow tag mlflow.source.type
+2021-04-03 14:17:03,966|azureml.mlflow|DEBUG|Setting the mlflow tag mlflow.source.name
+2021-04-03 14:17:03,966|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.get_details-async:False|DEBUG|[START]
+2021-04-03 14:17:03,966|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient|DEBUG|ClientBase: Calling get_details with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experiments/{experimentName}/runs/{runId}/details
+2021-04-03 14:17:04,114|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.get_details-async:False|DEBUG|[STOP]
+2021-04-03 14:17:04,116|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.patch_by_exp_id-async:False|DEBUG|[START]
+2021-04-03 14:17:04,116|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient|DEBUG|ClientBase: Calling patch_by_exp_id with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experimentids/{experimentId}/runs/{runId}
+2021-04-03 14:17:04,202|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.patch_by_exp_id-async:False|DEBUG|[STOP]
+2021-04-03 14:17:04,203|azureml.WorkerPool|DEBUG|[START]
+2021-04-03 14:17:04,203|azureml.SendRunKillSignal|DEBUG|[START]
+2021-04-03 14:17:04,203|azureml.RunStatusContext|DEBUG|[START]
+2021-04-03 14:17:04,203|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunContextManager.RunStatusContext|DEBUG|[START]
+2021-04-03 14:17:04,203|azureml.MetricsClient|DEBUG|[START]
+2021-04-03 14:17:04,203|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient|DEBUG|[START]
+2021-04-03 14:17:04,203|azureml.WorkingDirectoryCM|DEBUG|[START]
+2021-04-03 14:17:04,203|azureml.history._tracking.PythonWorkingDirectory.workingdir|DEBUG|[START]
+2021-04-03 14:17:04,203|azureml.history._tracking.PythonWorkingDirectory|INFO|Current working dir: /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43
+2021-04-03 14:17:04,203|azureml.history._tracking.PythonWorkingDirectory.workingdir|DEBUG|Calling pyfs
+2021-04-03 14:17:04,204|azureml.history._tracking.PythonWorkingDirectory.workingdir|DEBUG|Storing working dir for pyfs as /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43
+2021-04-03 14:17:04,336|azureml.core.run|DEBUG|Identity in use is not set. Falling back to using AMLToken
+2021-04-03 14:17:04,337|azureml.core.run|DEBUG|Using AMLToken auth for remote run
+2021-04-03 14:17:04,337|azureml._restclient.service_context|DEBUG|Access an existing static threadpool for ServiceContext class
+2021-04-03 14:17:04,339|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:04,341|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:04,346|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:04,347|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:04,348|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:04,348|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:04,348|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:04,387|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[START]
+2021-04-03 14:17:04,387|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient|DEBUG|ClientBase: Calling get_by_exp_id with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experimentids/{experimentId}/runs/{runId}
+2021-04-03 14:17:04,442|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[STOP]
+2021-04-03 14:17:04,444|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43|DEBUG|Constructing run from dto. type: azureml.scriptrun, source: None, props: {'runTemplate': 'automl_child', 'pipeline_id': '__AutoML_Stack_Ensemble__', 'pipeline_spec': '{"pipeline_id":"__AutoML_Stack_Ensemble__","objects":[{"module":"azureml.train.automl.stack_ensemble","class_name":"StackEnsemble","spec_class":"sklearn","param_args":[],"param_kwargs":{"automl_settings":"{\'task_type\':\'regression\',\'primary_metric\':\'spearman_correlation\',\'ensemble_iterations\':15,\'is_timeseries\':False,\'name\':\'exp1\',\'compute_target\':\'model2\',\'subscription_id\':\'b70cd360-9bf7-4811-add7-49b8f59baf39\',\'region\':\'eastus2\'}","ensemble_run_id":"AutoML_bf7840d2-5a31-488d-88df-bca241986748_43","experiment_name":"exp1","workspace_name":"Social_media_engagement","subscription_id":"b70cd360-9bf7-4811-add7-49b8f59baf39","resource_group_name":"MSHack"}}]}', 'training_percent': '100', 'predicted_cost': None, 'iteration': '43', '_aml_system_scenario_identification': 'Remote.Child', '_azureml.ComputeTargetType': 'amlcompute', 'ContentSnapshotId': '1b5fcb5d-905d-41d4-938d-85029847590e', 'ProcessInfoFile': 'azureml-logs/process_info.json', 'ProcessStatusFile': 'azureml-logs/process_status.json'}
+2021-04-03 14:17:04,444|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunContextManager|DEBUG|Valid logs dir, setting up content loader
+2021-04-03 14:17:04,606|azureml.core.run|DEBUG|Identity in use is not set. Falling back to using AMLToken
+2021-04-03 14:17:04,607|azureml.core.run|DEBUG|Using AMLToken auth for remote run
+2021-04-03 14:17:04,607|azureml._restclient.service_context|DEBUG|Access an existing static threadpool for ServiceContext class
+2021-04-03 14:17:04,608|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:04,611|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:04,612|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:04,612|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:04,613|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:04,613|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:04,614|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:06,047|azureml.core.run|DEBUG|Identity in use is not set. Falling back to using AMLToken
+2021-04-03 14:17:06,047|azureml.core.run|DEBUG|Using AMLToken auth for remote run
+2021-04-03 14:17:06,047|azureml._restclient.service_context|DEBUG|Access an existing static threadpool for ServiceContext class
+2021-04-03 14:17:06,047|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:06,048|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:06,048|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:06,048|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:06,048|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:06,048|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:06,049|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:06,061|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[START]
+2021-04-03 14:17:06,061|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.RunClient|DEBUG|ClientBase: Calling get_by_exp_id with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experimentids/{experimentId}/runs/{runId}
+2021-04-03 14:17:06,131|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[STOP]
+2021-04-03 14:17:06,133|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748|DEBUG|Constructing run from dto. type: automl, source: automl, props: {'num_iterations': '1000', 'training_type': 'TrainFull', 'acquisition_function': 'EI', 'primary_metric': 'spearman_correlation', 'train_split': '0', 'acquisition_parameter': '0', 'num_cross_validation': '5', 'target': 'model2', 'AMLSettingsJsonString': '{"enable_early_stopping":true,"enable_ensembling":true,"enable_stack_ensembling":true,"ensemble_iterations":15,"enable_onnx_compatible_models":false,"max_cores_per_iteration":-1,"send_telemetry":true,"blacklist_algos":["TensorFlowDNN","TensorFlowLinearRegressor"],"compute_target":"model2","enable_dnn":false,"experiment_exit_score":null,"experiment_timeout_minutes":180,"featurization":"auto","is_timeseries":false,"iteration_timeout_minutes":180,"max_concurrent_iterations":1,"metric_operation":"maximize","model_explainability":true,"n_cross_validations":null,"name":"exp1","path":"./sample_projects/exp1","primary_metric":"spearman_correlation","region":"eastus2","resource_group":"MSHack","subscription_id":"b70cd360-9bf7-4811-add7-49b8f59baf39","task_type":"regression","validation_size":null,"test_size":null,"vm_type":"STANDARD_DS3_V2","workspace_name":"Social_media_engagement","label_column_name":"Engagement","enable_run_restructure":true}', 'DataPrepJsonString': '{\\"datasets\\":0,\\"training_data\\":{\\"datasetId\\":\\"735171fe-bd62-4359-a327-e01da6009d7b\\"}}', 'EnableSubsampling': 'False', 'runTemplate': 'AutoML', 'azureml.runsource': 'automl', '_aml_system_scenario_identification': 'Remote.Parent', 'ClientType': 'Browser', 'environment_cpu_name': 'AzureML-AutoML', 'environment_cpu_label': 'prod', 'environment_gpu_name': 'AzureML-AutoML-GPU', 'environment_gpu_label': 'prod', 'root_attribution': 'automl', 'attribution': 'AutoML', 'Orchestrator': 'AutoML', 'CancelUri': 'https://eastus2.experiments.azureml.net/jasmine/v1.0/subscriptions/b70cd360-9bf7-4811-add7-49b8f59baf39/resourceGroups/MSHack/providers/Microsoft.MachineLearningServices/workspaces/Social_media_engagement/experiment/exp1/cancel/AutoML_bf7840d2-5a31-488d-88df-bca241986748', 'ClientSdkVersion': '1.24.0', 'snapshotId': '00000000-0000-0000-0000-000000000000', 'SetupRunId': 'AutoML_bf7840d2-5a31-488d-88df-bca241986748_setup', 'SetupRunContainerId': 'dcid.AutoML_bf7840d2-5a31-488d-88df-bca241986748_setup', 'FeaturizationRunJsonPath': 'featurizer_container.json', 'FeaturizationRunId': 'AutoML_bf7840d2-5a31-488d-88df-bca241986748_featurize', 'ProblemInfoJsonString': '{"dataset_num_categorical": 0, "is_sparse": true, "subsampling": true, "dataset_classes": 5197, "dataset_features": 170257, "dataset_samples": 10448, "single_frequency_class_detected": false}'}
+2021-04-03 14:17:06,133|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunContextManager|DEBUG|Valid logs dir, setting up content loader
+2021-04-03 14:17:06,141|azureml.data.datastore_client|DEBUG|Getting datastore: workspaceblobstore
+2021-04-03 14:17:06,141|azureml.data.datastore_client|INFO|<azureml.core.authentication.AzureMLTokenAuthentication object at 0x7f70c865f3c8>
+2021-04-03 14:17:06,395|azureml.data.datastore_client|DEBUG|Received DTO from the datastore service
+2021-04-03 14:17:06,483|azureml._vendor.azure_storage.common._auth|DEBUG|String_to_sign=PUT
+
+
+
+
+
+
+
+
+
+
+
+x-ms-client-request-id:450bd8a0-9487-11eb-99b6-fbf327b4f372
+x-ms-date:Sat, 03 Apr 2021 14:17:06 GMT
+x-ms-version:2018-03-28
+/socialmediaeng4644031978/automl-bf7840d2-5a31-488d-88df-bca241986748
+restype:share
+2021-04-03 14:17:06,577|azureml._vendor.azure_storage.common._auth|DEBUG|String_to_sign=GET
+
+
+
+
+
+
+
+
+
+
+
+x-ms-client-request-id:451a3864-9487-11eb-99b6-fbf327b4f372
+x-ms-date:Sat, 03 Apr 2021 14:17:06 GMT
+x-ms-version:2018-03-28
+/socialmediaeng4644031978/automl-bf7840d2-5a31-488d-88df-bca241986748
+comp:list
+restype:directory
+2021-04-03 14:17:06,590|azureml._vendor.azure_storage.common._auth|DEBUG|String_to_sign=GET
+
+
+
+
+
+
+
+
+
+
+
+x-ms-client-request-id:451c2c78-9487-11eb-99b6-fbf327b4f372
+x-ms-date:Sat, 03 Apr 2021 14:17:06 GMT
+x-ms-range:bytes=0-33554431
+x-ms-version:2018-03-28
+/socialmediaeng4644031978/automl-bf7840d2-5a31-488d-88df-bca241986748/saved_as
+2021-04-03 14:17:06,636|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[START]
+2021-04-03 14:17:06,636|azureml._vendor.azure_storage.common._auth|DEBUG|String_to_sign=GET
+
+
+
+
+
+
+
+
+
+
+
+x-ms-client-request-id:4523476a-9487-11eb-99b6-fbf327b4f372
+x-ms-date:Sat, 03 Apr 2021 14:17:06 GMT
+x-ms-version:2018-03-28
+/socialmediaeng4644031978/automl-bf7840d2-5a31-488d-88df-bca241986748
+comp:list
+restype:directory
+2021-04-03 14:17:06,637|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient|DEBUG|ClientBase: Calling get_by_exp_id with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experimentids/{experimentId}/runs/{runId}
+2021-04-03 14:17:06,650|azureml._vendor.azure_storage.common._auth|DEBUG|String_to_sign=GET
+
+
+
+
+
+
+
+
+
+
+
+x-ms-client-request-id:45254ede-9487-11eb-99b6-fbf327b4f372
+x-ms-date:Sat, 03 Apr 2021 14:17:06 GMT
+x-ms-range:bytes=0-33554431
+x-ms-version:2018-03-28
+/socialmediaeng4644031978/automl-bf7840d2-5a31-488d-88df-bca241986748/saved_as
+2021-04-03 14:17:06,684|azureml._vendor.azure_storage.common._auth|DEBUG|String_to_sign=GET
+
+
+
+
+
+
+
+
+
+
+
+x-ms-client-request-id:452a788c-9487-11eb-99b6-fbf327b4f372
+x-ms-date:Sat, 03 Apr 2021 14:17:06 GMT
+x-ms-range:bytes=0-33554431
+x-ms-version:2018-03-28
+/socialmediaeng4644031978/automl-bf7840d2-5a31-488d-88df-bca241986748/dataset_cached_object
+2021-04-03 14:17:06,700|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[STOP]
+2021-04-03 14:17:06,700|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:08,129|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[START]
+2021-04-03 14:17:08,130|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient|DEBUG|ClientBase: Calling get_by_exp_id with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experimentids/{experimentId}/runs/{runId}
+2021-04-03 14:17:08,187|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[STOP]
+2021-04-03 14:17:08,187|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:17:08,198|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.patch_by_exp_id-async:False|DEBUG|[START]
+2021-04-03 14:17:08,198|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient|DEBUG|ClientBase: Calling patch_by_exp_id with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experimentids/{experimentId}/runs/{runId}
+2021-04-03 14:17:08,286|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.patch_by_exp_id-async:False|DEBUG|[STOP]
+2021-04-03 14:17:32,612|azureml.core.authentication|DEBUG|Time to expire 1814350.387709 seconds
+2021-04-03 14:18:02,614|azureml.core.authentication|DEBUG|Time to expire 1814320.386011 seconds
+2021-04-03 14:18:31,939|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[START]
+2021-04-03 14:18:31,940|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient|DEBUG|ClientBase: Calling get_by_exp_id with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experimentids/{experimentId}/runs/{runId}
+2021-04-03 14:18:32,072|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[STOP]
+2021-04-03 14:18:32,078|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:18:32,823|azureml.core.authentication|DEBUG|Time to expire 1814290.176198 seconds
+2021-04-03 14:18:33,796|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.patch_by_exp_id-async:False|DEBUG|[START]
+2021-04-03 14:18:33,797|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient|DEBUG|ClientBase: Calling patch_by_exp_id with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experimentids/{experimentId}/runs/{runId}
+2021-04-03 14:18:34,381|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.patch_by_exp_id-async:False|DEBUG|[STOP]
+2021-04-03 14:18:34,383|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files|DEBUG|Overriding default timeout to 1200
+2021-04-03 14:18:34,384|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files|DEBUG|[Start]
+2021-04-03 14:18:34,384|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.batch_create_empty_artifacts-async:False|DEBUG|[START]
+2021-04-03 14:18:34,384|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient|DEBUG|ClientBase: Calling batch_create_empty_artifacts with url /artifact/v2.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/artifacts/batch/metadata/{origin}/{container}
+2021-04-03 14:18:34,631|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.batch_create_empty_artifacts-async:False|DEBUG|[STOP]
+2021-04-03 14:18:34,631|azureml._restclient.service_context.WorkerPool|DEBUG|submitting future: perform_upload
+2021-04-03 14:18:34,632|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.0_perform_upload|DEBUG|Using basic handler - no exception handling
+2021-04-03 14:18:34,632|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files|DEBUG|Adding task 0_perform_upload to queue of approximate size: 0
+2021-04-03 14:18:34,633|azureml._restclient.clientbase|DEBUG|ClientBase: Calling create_blob_from_stream with url None
+2021-04-03 14:18:34,633|azureml._restclient.service_context.WorkerPool|DEBUG|submitting future: perform_upload
+2021-04-03 14:18:34,638|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.1_perform_upload|DEBUG|Using basic handler - no exception handling
+2021-04-03 14:18:34,639|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files|DEBUG|Adding task 1_perform_upload to queue of approximate size: 1
+2021-04-03 14:18:34,639|azureml._restclient.clientbase|DEBUG|ClientBase: Calling create_blob_from_stream with url None
+2021-04-03 14:18:34,639|azureml._restclient.service_context.WorkerPool|DEBUG|submitting future: perform_upload
+2021-04-03 14:18:34,643|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.2_perform_upload|DEBUG|Using basic handler - no exception handling
+2021-04-03 14:18:34,643|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files|DEBUG|Adding task 2_perform_upload to queue of approximate size: 2
+2021-04-03 14:18:34,643|azureml._restclient.clientbase|DEBUG|ClientBase: Calling create_blob_from_stream with url None
+2021-04-03 14:18:34,643|azureml._restclient.service_context.WorkerPool|DEBUG|submitting future: perform_upload
+2021-04-03 14:18:34,647|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.3_perform_upload|DEBUG|Using basic handler - no exception handling
+2021-04-03 14:18:34,647|azureml._restclient.clientbase|DEBUG|ClientBase: Calling create_blob_from_stream with url None
+2021-04-03 14:18:34,648|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files|DEBUG|Adding task 3_perform_upload to queue of approximate size: 3
+2021-04-03 14:18:34,648|azureml._restclient.service_context.WorkerPool|DEBUG|submitting future: perform_upload
+2021-04-03 14:18:34,651|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.4_perform_upload|DEBUG|Using basic handler - no exception handling
+2021-04-03 14:18:34,652|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files|DEBUG|Adding task 4_perform_upload to queue of approximate size: 4
+2021-04-03 14:18:34,652|azureml._restclient.clientbase|DEBUG|ClientBase: Calling create_blob_from_stream with url None
+2021-04-03 14:18:34,652|azureml._restclient.service_context.WorkerPool|DEBUG|submitting future: perform_upload
+2021-04-03 14:18:34,652|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.5_perform_upload|DEBUG|Using basic handler - no exception handling
+2021-04-03 14:18:34,653|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files|DEBUG|Adding task 5_perform_upload to queue of approximate size: 5
+2021-04-03 14:18:34,653|azureml._restclient.clientbase|DEBUG|ClientBase: Calling create_blob_from_stream with url None
+2021-04-03 14:18:34,653|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files|DEBUG|[Stop] - waiting default timeout
+2021-04-03 14:18:34,653|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.WaitFlushSource:upload_files|DEBUG|[START]
+2021-04-03 14:18:34,653|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.WaitFlushSource:upload_files|DEBUG|Overriding default flush timeout from None to 1200
+2021-04-03 14:18:34,653|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.WaitFlushSource:upload_files|DEBUG|Waiting 1200 seconds on tasks: [AsyncTask(0_perform_upload), AsyncTask(1_perform_upload), AsyncTask(2_perform_upload), AsyncTask(3_perform_upload), AsyncTask(4_perform_upload), AsyncTask(5_perform_upload)].
+2021-04-03 14:18:34,719|azureml._file_utils.upload|DEBUG|Uploaded blob ExperimentRun/dcid.AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/outputs/conda_env_v_1_0_0.yml with size 755, file size 755.
+2021-04-03 14:18:34,724|azureml._file_utils.upload|DEBUG|Uploaded blob ExperimentRun/dcid.AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/outputs/scoring_file_v_1_0_0.py with size 2655, file size 2655.
+2021-04-03 14:18:34,748|azureml._file_utils.upload|DEBUG|Uploaded blob ExperimentRun/dcid.AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/outputs/env_dependencies.json with size 4373, file size 4373.
+2021-04-03 14:18:34,749|azureml._file_utils.upload|DEBUG|Uploaded blob ExperimentRun/dcid.AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/outputs/pipeline_graph.json with size 6413, file size 6413.
+2021-04-03 14:18:34,904|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.0_perform_upload.WaitingTask|DEBUG|[START]
+2021-04-03 14:18:34,904|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.0_perform_upload.WaitingTask|DEBUG|Awaiter is upload_files
+2021-04-03 14:18:34,904|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.0_perform_upload.WaitingTask|DEBUG|[STOP]
+2021-04-03 14:18:34,904|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.1_perform_upload.WaitingTask|DEBUG|[START]
+2021-04-03 14:18:34,904|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.1_perform_upload.WaitingTask|DEBUG|Awaiter is upload_files
+2021-04-03 14:18:34,904|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.1_perform_upload.WaitingTask|DEBUG|[STOP]
+2021-04-03 14:18:34,905|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.2_perform_upload.WaitingTask|DEBUG|[START]
+2021-04-03 14:18:34,905|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.2_perform_upload.WaitingTask|DEBUG|Awaiter is upload_files
+2021-04-03 14:18:34,905|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.2_perform_upload.WaitingTask|DEBUG|[STOP]
+2021-04-03 14:18:34,905|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.3_perform_upload.WaitingTask|DEBUG|[START]
+2021-04-03 14:18:34,905|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.3_perform_upload.WaitingTask|DEBUG|Awaiter is upload_files
+2021-04-03 14:18:34,905|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.3_perform_upload.WaitingTask|DEBUG|[STOP]
+2021-04-03 14:18:35,186|azureml._file_utils.upload|DEBUG|Uploaded blob ExperimentRun/dcid.AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/outputs/model.pkl with size 27607162, file size 27607162.
+2021-04-03 14:18:35,343|azureml._file_utils.upload|DEBUG|Uploaded blob ExperimentRun/dcid.AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/outputs/internal_cross_validated_models.pkl with size 37510985, file size 37510985.
+2021-04-03 14:18:35,406|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.4_perform_upload.WaitingTask|DEBUG|[START]
+2021-04-03 14:18:35,406|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.4_perform_upload.WaitingTask|DEBUG|Awaiter is upload_files
+2021-04-03 14:18:35,407|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.4_perform_upload.WaitingTask|DEBUG|[STOP]
+2021-04-03 14:18:35,407|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.5_perform_upload.WaitingTask|DEBUG|[START]
+2021-04-03 14:18:35,407|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.5_perform_upload.WaitingTask|DEBUG|Awaiter is upload_files
+2021-04-03 14:18:35,407|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.5_perform_upload.WaitingTask|DEBUG|[STOP]
+2021-04-03 14:18:35,407|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files|DEBUG|Waiting on task: 0_perform_upload.
+Waiting on task: 1_perform_upload.
+Waiting on task: 2_perform_upload.
+Waiting on task: 3_perform_upload.
+Waiting on task: 4_perform_upload.
+Waiting on task: 5_perform_upload.
+6 tasks left. Current duration of flush 0.00014257431030273438 seconds.
+Waiting on task: 4_perform_upload.
+Waiting on task: 5_perform_upload.
+2 tasks left. Current duration of flush 0.25183820724487305 seconds.
+Waiting on task: 4_perform_upload.
+Waiting on task: 5_perform_upload.
+2 tasks left. Current duration of flush 0.5020442008972168 seconds.
+
+2021-04-03 14:18:35,408|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.upload_files.WaitFlushSource:upload_files|DEBUG|[STOP]
+2021-04-03 14:18:35,422|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.patch_by_exp_id-async:False|DEBUG|[START]
+2021-04-03 14:18:35,422|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient|DEBUG|ClientBase: Calling patch_by_exp_id with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experimentids/{experimentId}/runs/{runId}
+2021-04-03 14:18:35,530|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.patch_by_exp_id-async:False|DEBUG|[STOP]
+2021-04-03 14:18:35,532|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[START]
+2021-04-03 14:18:35,532|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient|DEBUG|Overrides: Max batch size: 50, batch cushion: 5, Interval: 1.
+2021-04-03 14:18:35,532|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient|DEBUG|ClientBase: Calling get_by_exp_id with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experimentids/{experimentId}/runs/{runId}
+2021-04-03 14:18:35,533|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.PostMetricsBatchV2Daemon|DEBUG|Starting daemon and triggering first instance
+2021-04-03 14:18:35,539|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient|DEBUG|Used <class 'azureml._common.async_utils.batch_task_queue.BatchTaskQueue'> for use_batch=True.
+2021-04-03 14:18:35,541|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient|DEBUG|Called upload_artifact
+2021-04-03 14:18:35,541|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient|DEBUG|Uploading io artifact
+2021-04-03 14:18:35,541|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.batch_create_empty_artifacts-async:False|DEBUG|[START]
+2021-04-03 14:18:35,542|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient|DEBUG|ClientBase: Calling batch_create_empty_artifacts with url /artifact/v2.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/artifacts/batch/metadata/{origin}/{container}
+2021-04-03 14:18:35,601|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[STOP]
+2021-04-03 14:18:35,602|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:18:35,721|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.batch_create_empty_artifacts-async:False|DEBUG|[STOP]
+2021-04-03 14:18:35,722|azureml._restclient.clientbase|DEBUG|ClientBase: Calling create_blob_from_stream with url None
+2021-04-03 14:18:35,754|azureml._file_utils.upload|DEBUG|Uploaded blob ExperimentRun/dcid.AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/residuals with size 352, file size 352.
+2021-04-03 14:18:35,756|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient|DEBUG|Called upload_artifact
+2021-04-03 14:18:35,756|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient|DEBUG|Uploading io artifact
+2021-04-03 14:18:35,756|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.batch_create_empty_artifacts-async:False|DEBUG|[START]
+2021-04-03 14:18:35,756|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient|DEBUG|ClientBase: Calling batch_create_empty_artifacts with url /artifact/v2.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/artifacts/batch/metadata/{origin}/{container}
+2021-04-03 14:18:35,909|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.ArtifactsClient.batch_create_empty_artifacts-async:False|DEBUG|[STOP]
+2021-04-03 14:18:35,909|azureml._restclient.clientbase|DEBUG|ClientBase: Calling create_blob_from_stream with url None
+2021-04-03 14:18:35,942|azureml._file_utils.upload|DEBUG|Uploaded blob ExperimentRun/dcid.AutoML_bf7840d2-5a31-488d-88df-bca241986748_43/predicted_true with size 3246, file size 3246.
+2021-04-03 14:18:36,515|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[START]
+2021-04-03 14:18:36,516|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient|DEBUG|ClientBase: Calling get_by_exp_id with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experimentids/{experimentId}/runs/{runId}
+2021-04-03 14:18:36,540|azureml.BatchTaskQueueAdd_1_Batches|DEBUG|[Start]
+2021-04-03 14:18:36,540|azureml.BatchTaskQueueAdd_1_Batches.WorkerPool|DEBUG|submitting future: _handle_batch
+2021-04-03 14:18:36,541|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2|DEBUG|Batch size 14.
+2021-04-03 14:18:36,541|azureml.BatchTaskQueueAdd_1_Batches.0__handle_batch|DEBUG|Using basic handler - no exception handling
+2021-04-03 14:18:36,541|azureml._restclient.service_context.WorkerPool|DEBUG|submitting future: _log_batch_v2
+2021-04-03 14:18:36,541|azureml.BatchTaskQueueAdd_1_Batches|DEBUG|Adding task 0__handle_batch to queue of approximate size: 0
+2021-04-03 14:18:36,542|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient|DEBUG|Metrics Client: _log_batch_v2 is calling post_run_metrics posting 14 values.
+2021-04-03 14:18:36,543|azureml.BatchTaskQueueAdd_1_Batches|DEBUG|[Stop] - waiting default timeout
+2021-04-03 14:18:36,543|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.0__log_batch_v2|DEBUG|Using basic handler - no exception handling
+2021-04-03 14:18:36,544|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient._post_run_metrics_log_failed_validations-async:False|DEBUG|[START]
+2021-04-03 14:18:36,544|azureml.BatchTaskQueueAdd_1_Batches.WaitFlushSource:BatchTaskQueueAdd_1_Batches|DEBUG|[START]
+2021-04-03 14:18:36,544|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2|DEBUG|Adding task 0__log_batch_v2 to queue of approximate size: 0
+2021-04-03 14:18:36,544|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient|DEBUG|ClientBase: Calling _post_run_metrics_log_failed_validations with url None
+2021-04-03 14:18:36,544|azureml.BatchTaskQueueAdd_1_Batches.WaitFlushSource:BatchTaskQueueAdd_1_Batches|DEBUG|Overriding default flush timeout from None to 120
+2021-04-03 14:18:36,551|azureml.BatchTaskQueueAdd_1_Batches.WaitFlushSource:BatchTaskQueueAdd_1_Batches|DEBUG|Waiting 120 seconds on tasks: [AsyncTask(0__handle_batch)].
+2021-04-03 14:18:36,551|azureml.BatchTaskQueueAdd_1_Batches.0__handle_batch.WaitingTask|DEBUG|[START]
+2021-04-03 14:18:36,551|azureml.BatchTaskQueueAdd_1_Batches.0__handle_batch.WaitingTask|DEBUG|Awaiter is BatchTaskQueueAdd_1_Batches
+2021-04-03 14:18:36,551|azureml.BatchTaskQueueAdd_1_Batches.0__handle_batch.WaitingTask|DEBUG|[STOP]
+2021-04-03 14:18:36,551|azureml.BatchTaskQueueAdd_1_Batches|DEBUG|
+2021-04-03 14:18:36,551|azureml.BatchTaskQueueAdd_1_Batches.WaitFlushSource:BatchTaskQueueAdd_1_Batches|DEBUG|[STOP]
+2021-04-03 14:18:36,576|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[STOP]
+2021-04-03 14:18:36,576|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.patch_by_exp_id-async:False|DEBUG|[START]
+2021-04-03 14:18:36,577|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient|DEBUG|ClientBase: Calling patch_by_exp_id with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experimentids/{experimentId}/runs/{runId}
+2021-04-03 14:18:36,698|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.patch_by_exp_id-async:False|DEBUG|[STOP]
+2021-04-03 14:18:36,739|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[START]
+2021-04-03 14:18:36,739|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient|DEBUG|ClientBase: Calling get_by_exp_id with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experimentids/{experimentId}/runs/{runId}
+2021-04-03 14:18:36,841|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[STOP]
+2021-04-03 14:18:36,951|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[START]
+2021-04-03 14:18:36,951|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient|DEBUG|ClientBase: Calling get_by_exp_id with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experimentids/{experimentId}/runs/{runId}
+2021-04-03 14:18:37,021|azureml.history._tracking.PythonWorkingDirectory.workingdir|DEBUG|Calling pyfs
+2021-04-03 14:18:37,024|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.RunClient.get_by_exp_id-async:False|DEBUG|[STOP]
+2021-04-03 14:18:37,024|azureml.history._tracking.PythonWorkingDirectory|INFO|Current working dir: /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43
+2021-04-03 14:18:37,024|azureml._base_sdk_common.service_discovery|DEBUG|Found history service url in environment variable AZUREML_SERVICE_ENDPOINT, history service url: https://eastus2.experiments.azureml.net.
+2021-04-03 14:18:37,025|azureml.history._tracking.PythonWorkingDirectory.workingdir|DEBUG|Reverting working dir from /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43 to /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43
+2021-04-03 14:18:37,030|azureml.history._tracking.PythonWorkingDirectory|INFO|Working dir is already updated /mnt/batch/tasks/shared/LS_root/jobs/social_media_engagement/azureml/automl_bf7840d2-5a31-488d-88df-bca241986748_43/mounts/workspaceblobstore/azureml/AutoML_bf7840d2-5a31-488d-88df-bca241986748_43
+2021-04-03 14:18:37,030|azureml.history._tracking.PythonWorkingDirectory.workingdir|DEBUG|[STOP]
+2021-04-03 14:18:37,030|azureml.WorkingDirectoryCM|DEBUG|[STOP]
+2021-04-03 14:18:37,030|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.FlushingMetricsClient|DEBUG|[START]
+2021-04-03 14:18:37,030|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient|DEBUG|Overrides: Max batch size: 50, batch cushion: 5, Interval: 1.
+2021-04-03 14:18:37,031|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch.PostMetricsBatchDaemon|DEBUG|Starting daemon and triggering first instance
+2021-04-03 14:18:37,031|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient|DEBUG|Used <class 'azureml._common.async_utils.batch_task_queue.BatchTaskQueue'> for use_batch=True.
+2021-04-03 14:18:37,031|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|[START]
+2021-04-03 14:18:37,031|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|flush timeout 120 is different from task queue timeout 120, using flush timeout
+2021-04-03 14:18:37,031|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|Waiting 120 seconds on tasks: [].
+2021-04-03 14:18:37,031|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch|DEBUG|
+2021-04-03 14:18:37,031|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|[STOP]
+2021-04-03 14:18:37,031|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient|DEBUG|Overrides: Max batch size: 50, batch cushion: 5, Interval: 1.
+2021-04-03 14:18:37,031|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.PostMetricsBatchV2Daemon|DEBUG|Starting daemon and triggering first instance
+2021-04-03 14:18:37,032|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient|DEBUG|Used <class 'azureml._common.async_utils.batch_task_queue.BatchTaskQueue'> for use_batch=True.
+2021-04-03 14:18:37,032|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|[START]
+2021-04-03 14:18:37,032|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|flush timeout 120 is different from task queue timeout 120, using flush timeout
+2021-04-03 14:18:37,032|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|Waiting 120 seconds on tasks: [].
+2021-04-03 14:18:37,032|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2|DEBUG|
+2021-04-03 14:18:37,032|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|[STOP]
+2021-04-03 14:18:37,032|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.FlushingMetricsClient|DEBUG|[STOP]
+2021-04-03 14:18:37,032|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.wait_on_ingest-async:False|DEBUG|[START]
+2021-04-03 14:18:37,032|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient|DEBUG|ClientBase: Calling wait_on_ingest with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experiments/{experimentName}/runs/{runId}/metricsingest/wait
+2021-04-03 14:18:37,100|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.wait_on_ingest-async:False|DEBUG|[STOP]
+2021-04-03 14:18:37,101|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient|DEBUG|[STOP]
+2021-04-03 14:18:37,101|azureml.MetricsClient|DEBUG|[STOP]
+2021-04-03 14:18:37,101|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.FlushingMetricsClient|DEBUG|[START]
+2021-04-03 14:18:37,101|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|[START]
+2021-04-03 14:18:37,101|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|flush timeout 300 is different from task queue timeout 120, using flush timeout
+2021-04-03 14:18:37,101|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|Waiting 300 seconds on tasks: [].
+2021-04-03 14:18:37,101|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch|DEBUG|
+2021-04-03 14:18:37,101|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|[STOP]
+2021-04-03 14:18:37,101|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|[START]
+2021-04-03 14:18:37,101|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|flush timeout 300 is different from task queue timeout 120, using flush timeout
+2021-04-03 14:18:37,101|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|Waiting 300 seconds on tasks: [].
+2021-04-03 14:18:37,101|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2|DEBUG|
+2021-04-03 14:18:37,102|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|[STOP]
+2021-04-03 14:18:37,102|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.FlushingMetricsClient|DEBUG|[STOP]
+2021-04-03 14:18:37,102|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.wait_on_ingest-async:False|DEBUG|[START]
+2021-04-03 14:18:37,102|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient|DEBUG|ClientBase: Calling wait_on_ingest with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experiments/{experimentName}/runs/{runId}/metricsingest/wait
+2021-04-03 14:18:37,123|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient._post_run_metrics_log_failed_validations-async:False|DEBUG|[STOP]
+2021-04-03 14:18:37,174|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.wait_on_ingest-async:False|DEBUG|[STOP]
+2021-04-03 14:18:42,180|azureml._restclient.clientbase|DEBUG|ClientBase: Calling update_status with url None
+2021-04-03 14:18:42,788|azureml.RunStatusContext|DEBUG|[STOP]
+2021-04-03 14:18:42,789|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.FlushingMetricsClient|DEBUG|[START]
+2021-04-03 14:18:42,789|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|[START]
+2021-04-03 14:18:42,789|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|flush timeout 900.0 is different from task queue timeout 120, using flush timeout
+2021-04-03 14:18:42,789|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|Waiting 900.0 seconds on tasks: [].
+2021-04-03 14:18:42,789|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch|DEBUG|
+2021-04-03 14:18:42,789|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|[STOP]
+2021-04-03 14:18:42,789|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|[START]
+2021-04-03 14:18:42,790|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|flush timeout 900.0 is different from task queue timeout 120, using flush timeout
+2021-04-03 14:18:42,790|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|Waiting 900.0 seconds on tasks: [].
+2021-04-03 14:18:42,790|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2|DEBUG|
+2021-04-03 14:18:42,790|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|[STOP]
+2021-04-03 14:18:42,790|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.FlushingMetricsClient|DEBUG|[STOP]
+2021-04-03 14:18:42,790|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.wait_on_ingest-async:False|DEBUG|[START]
+2021-04-03 14:18:42,790|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient|DEBUG|ClientBase: Calling wait_on_ingest with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experiments/{experimentName}/runs/{runId}/metricsingest/wait
+2021-04-03 14:18:42,864|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.wait_on_ingest-async:False|DEBUG|[STOP]
+2021-04-03 14:18:42,864|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.FlushingMetricsClient|DEBUG|[START]
+2021-04-03 14:18:42,864|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient|DEBUG|Overrides: Max batch size: 50, batch cushion: 5, Interval: 1.
+2021-04-03 14:18:42,864|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch.PostMetricsBatchDaemon|DEBUG|Starting daemon and triggering first instance
+2021-04-03 14:18:42,865|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient|DEBUG|Used <class 'azureml._common.async_utils.batch_task_queue.BatchTaskQueue'> for use_batch=True.
+2021-04-03 14:18:42,865|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|[START]
+2021-04-03 14:18:42,865|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|flush timeout 900.0 is different from task queue timeout 120, using flush timeout
+2021-04-03 14:18:42,865|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|Waiting 900.0 seconds on tasks: [].
+2021-04-03 14:18:42,865|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch|DEBUG|
+2021-04-03 14:18:42,865|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|[STOP]
+2021-04-03 14:18:42,865|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|[START]
+2021-04-03 14:18:42,865|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|flush timeout 900.0 is different from task queue timeout 120, using flush timeout
+2021-04-03 14:18:42,865|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|Waiting 900.0 seconds on tasks: [AsyncTask(0__log_batch_v2)].
+2021-04-03 14:18:42,865|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.0__log_batch_v2.WaitingTask|DEBUG|[START]
+2021-04-03 14:18:42,866|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.0__log_batch_v2.WaitingTask|DEBUG|Awaiter is PostMetricsBatchV2
+2021-04-03 14:18:42,866|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.0__log_batch_v2.WaitingTask|DEBUG|[STOP]
+2021-04-03 14:18:42,866|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2|DEBUG|
+2021-04-03 14:18:42,866|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|[STOP]
+2021-04-03 14:18:42,866|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.FlushingMetricsClient|DEBUG|[STOP]
+2021-04-03 14:18:42,866|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.wait_on_ingest-async:False|DEBUG|[START]
+2021-04-03 14:18:42,866|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient|DEBUG|ClientBase: Calling wait_on_ingest with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experiments/{experimentName}/runs/{runId}/metricsingest/wait
+2021-04-03 14:18:42,945|azureml._SubmittedRun#AutoML_bf7840d2-5a31-488d-88df-bca241986748_43.RunHistoryFacade.MetricsClient.wait_on_ingest-async:False|DEBUG|[STOP]
+2021-04-03 14:18:42,946|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.MetricsClient.FlushingMetricsClient|DEBUG|[START]
+2021-04-03 14:18:42,946|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.MetricsClient|DEBUG|Overrides: Max batch size: 50, batch cushion: 5, Interval: 1.
+2021-04-03 14:18:42,946|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.MetricsClient.PostMetricsBatch.PostMetricsBatchDaemon|DEBUG|Starting daemon and triggering first instance
+2021-04-03 14:18:42,947|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.MetricsClient|DEBUG|Used <class 'azureml._common.async_utils.batch_task_queue.BatchTaskQueue'> for use_batch=True.
+2021-04-03 14:18:42,947|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|[START]
+2021-04-03 14:18:42,947|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|flush timeout 900.0 is different from task queue timeout 120, using flush timeout
+2021-04-03 14:18:42,947|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|Waiting 900.0 seconds on tasks: [].
+2021-04-03 14:18:42,947|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.MetricsClient.PostMetricsBatch|DEBUG|
+2021-04-03 14:18:42,947|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.MetricsClient.PostMetricsBatch.WaitFlushSource:MetricsClient|DEBUG|[STOP]
+2021-04-03 14:18:42,948|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.MetricsClient|DEBUG|Overrides: Max batch size: 50, batch cushion: 5, Interval: 1.
+2021-04-03 14:18:42,948|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.PostMetricsBatchV2Daemon|DEBUG|Starting daemon and triggering first instance
+2021-04-03 14:18:42,948|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.MetricsClient|DEBUG|Used <class 'azureml._common.async_utils.batch_task_queue.BatchTaskQueue'> for use_batch=True.
+2021-04-03 14:18:42,948|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|[START]
+2021-04-03 14:18:42,949|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|flush timeout 900.0 is different from task queue timeout 120, using flush timeout
+2021-04-03 14:18:42,949|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|Waiting 900.0 seconds on tasks: [].
+2021-04-03 14:18:42,949|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.MetricsClient.PostMetricsBatchV2|DEBUG|
+2021-04-03 14:18:42,949|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.MetricsClient.PostMetricsBatchV2.WaitFlushSource:MetricsClient|DEBUG|[STOP]
+2021-04-03 14:18:42,949|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.MetricsClient.FlushingMetricsClient|DEBUG|[STOP]
+2021-04-03 14:18:42,949|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.MetricsClient.wait_on_ingest-async:False|DEBUG|[START]
+2021-04-03 14:18:42,949|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.MetricsClient|DEBUG|ClientBase: Calling wait_on_ingest with url /history/v1.0/subscriptions/{subscriptionId}/resourceGroups/{resourceGroupName}/providers/Microsoft.MachineLearningServices/workspaces/{workspaceName}/experiments/{experimentName}/runs/{runId}/metricsingest/wait
+2021-04-03 14:18:43,014|azureml.Run#AutoML_bf7840d2-5a31-488d-88df-bca241986748.RunHistoryFacade.MetricsClient.wait_on_ingest-async:False|DEBUG|[STOP]
+2021-04-03 14:18:43,014|azureml.SendRunKillSignal|DEBUG|[STOP]
+2021-04-03 14:18:43,015|azureml.HistoryTrackingWorkerPool.WorkerPoolShutdown|DEBUG|[START]
+2021-04-03 14:18:43,015|azureml.HistoryTrackingWorkerPool.WorkerPoolShutdown|DEBUG|[STOP]
+2021-04-03 14:18:43,015|azureml.WorkerPool|DEBUG|[STOP]
